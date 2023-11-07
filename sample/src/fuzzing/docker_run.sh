@@ -1,0 +1,1 @@
+docker run -v `pwd`/../..:/src -v ~/tools/xedkc/crusher/:/crusher --network host -it uj8mvn

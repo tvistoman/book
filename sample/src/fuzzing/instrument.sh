@@ -1,0 +1,1 @@
+/crusher/kelinci/instrument -cp_i /src/target/ex-0.0.1-SNAPSHOT.jar.original -i bin -o bin_instr

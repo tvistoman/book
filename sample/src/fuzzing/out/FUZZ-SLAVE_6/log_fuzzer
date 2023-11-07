@@ -1,0 +1,186 @@
+[2023-11-03 13:31:43.015] [fuzzer] [info] Using default control module
+[2023-11-03 13:31:43.015] [fuzzer] [info] Config file is not set
+[2023-11-03 13:31:43.015] [fuzzer] [info] Load Python control module
+[2023-11-03 13:31:43.015] [fuzzer] [info]     Path to directory control module: /crusher/bin_x86-64/Plugins
+[2023-11-03 13:31:43.015] [fuzzer] [info]     File name control module: cm_standard
+[2023-11-03 13:31:43.015] [fuzzer] [info]     File config json: 
+[2023-11-03 13:31:43.016] [fuzzer] [info] Control module loaded.
+[2023-11-03 13:31:43.016] [fuzzer] [info]     Strategy mutation:     
+[2023-11-03 13:31:43.016] [fuzzer] [info]     OK
+
+[2023-11-03 13:31:43.016] [fuzzer] [info]     Configure:    
+[2023-11-03 13:31:43.016] [fuzzer] [info] [1;92mOK[0m
+
+[2023-11-03 13:31:43.016] [fuzzer] [info] Control module init complete
+[2023-11-03 13:31:43.016] [fuzzer] [warning] Dict of mutation constraints is not set
+[2023-11-03 13:31:43.016] [fuzzer] [info] Plugins initialized
+[2023-11-03 13:31:43.016] [fuzzer] [info] You have 12 CPU cores and 7 runnable tasks (utilization: 58.33).
+[2023-11-03 13:31:43.016] [fuzzer] [info] Try parallel jobs - see --help
+[2023-11-03 13:31:43.016] [fuzzer] [info] Setting up output directories...
+[2023-11-03 13:31:43.020] [fuzzer] [info] Config file is empty
+[2023-11-03 13:31:43.020] [fuzzer] [info] Use standard mutations list
+[2023-11-03 13:31:43.020] [fuzzer] [info] No auto-generated dictionary tokens to reuse.
+[2023-11-03 13:31:43.020] [fuzzer] [info] Initialize mutations:
+[2023-11-03 13:31:43.020] [fuzzer] [info] Deterministic mutations:
+[2023-11-03 13:31:43.020] [fuzzer] [info] Random mutations:
+[2023-11-03 13:31:43.020] [fuzzer] [info] 0. splice_with_havoc
+[2023-11-03 13:31:43.020] [fuzzer] [info] 1. fstring
+[2023-11-03 13:31:43.020] [fuzzer] [warning] Can't find path to target binary. It may be ok, but generally you should check your target run string. Given path: /src/src/fuzzing/bin_instr:/src/target/ex-0.0.1-SNAPSHOT.jar.orig-instrinal:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/root/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/root/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar
+[2023-11-03 13:31:43.020] [fuzzer] [info] Kelinci Run args: /crusher/bin_x86-64/jdk-8/bin/java -cp /src/src/fuzzing/bin_instr:/src/target/ex-0.0.1-SNAPSHOT.jar.orig-instrinal:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar:/root/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/root/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar edu.cmu.sv.kelinci.Kelinci my.sample.sample.harness --status-pipe /src/src/fuzzing/out/FUZZ-SLAVE_6/.tmp/java_instr/control_fifo --exit-code-pipe /src/src/fuzzing/out/FUZZ-SLAVE_6/.tmp/java_instr/exit_status_fifo --shared-memory /src/src/fuzzing/out/FUZZ-SLAVE_6/.tmp/java_instr/shared_mem --timeout 1000 /src/src/fuzzing/out/FUZZ-SLAVE_6/.cur_input 1 
+
+[2023-11-03 13:31:43.020] [fuzzer] [info] Selected instrumentation: JavaKelinciInstrumentation
+[2023-11-03 13:31:43.020] [fuzzer] [info] Initialized queue handlers:
+[2023-11-03 13:31:43.020] [fuzzer] [info] Automation queue handler subsequence:
+[2023-11-03 13:31:43.020] [fuzzer] [info] Initialized crash handlers:
+[2023-11-03 13:31:43.020] [fuzzer] [info] 1. crash_input_data
+[2023-11-03 13:31:43.020] [fuzzer] [info] 2. bitmap
+[2023-11-03 13:31:43.020] [fuzzer] [info] Automation crash handler subsequence:
+[2023-11-03 13:31:43.020] [fuzzer] [info] 1. bitmap
+[2023-11-03 13:31:43.020] [fuzzer] [info] 2. crash_input_data
+[2023-11-03 13:31:43.020] [fuzzer] [info] Initialized hang handlers:
+[2023-11-03 13:31:43.020] [fuzzer] [info] 1. hang_input_data
+[2023-11-03 13:31:43.020] [fuzzer] [info] 2. bitmap
+[2023-11-03 13:31:43.020] [fuzzer] [info] Automation hang handler subsequence:
+[2023-11-03 13:31:43.020] [fuzzer] [info] 1. bitmap
+[2023-11-03 13:31:43.020] [fuzzer] [info] 2. hang_input_data
+[2023-11-03 13:31:43.020] [fuzzer] [info] Disabling the UI according to the configuration
+[2023-11-03 13:31:43.020] [fuzzer] [info] IMPORT-INPUTS: FUZZ-IMPORT_INPUTS
+[2023-11-03 13:31:43.020] [fuzzer] [info] Attempting dry run with 'json_car.json'...
+[2023-11-03 13:31:43.020] [fuzzer] [info] Spinning up the fork server...
+[2023-11-03 13:31:43.579] [fuzzer] [info]     len = 53, map size = 38, exec speed = 3133 us
+[2023-11-03 13:31:43.579] [fuzzer] [info] All test cases processed.
+[2023-11-03 13:31:43.579] [fuzzer] [info] Creating hard links for all input files...
+[2023-11-03 13:31:43.579] [fuzzer] [info] Removing initialization artifacts
+[2023-11-03 13:31:43.579] [fuzzer] [info] All set and ready to roll!
+[2023-11-03 13:31:43.579] [fuzzer] [info] Entering queue cycle 1.
+[2023-11-03 13:31:43.579] [fuzzer] [info] Fuzzing test case #0 ( queued paths: 1, uniq crashes: 0, exec_us: 3133 map size: 38, exec/s 36.842105
+[2023-11-03 13:32:22.604] [fuzzer] [info] DSEs: FUZZ-DSE_0
+[2023-11-03 13:32:22.606] [fuzzer] [info] Partners list: FUZZ-MASTER_0, FUZZ-SLAVE_0, FUZZ-SLAVE_1, FUZZ-SLAVE_2, FUZZ-SLAVE_3, FUZZ-SLAVE_4, FUZZ-SLAVE_5, FUZZ-SLAVE_6
+[2023-11-03 13:32:22.606] [fuzzer] [info] My number: 7
+[2023-11-03 13:32:22.606] [fuzzer] [info] Sync list: 1-FUZZ-SLAVE_5
+[2023-11-03 13:32:22.606] [fuzzer] [info] Sync list: 2-FUZZ-SLAVE_4
+[2023-11-03 13:32:22.606] [fuzzer] [info] Sync list: 3-FUZZ-SLAVE_2
+[2023-11-03 13:32:22.647] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 20, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 915.914022
+[2023-11-03 13:32:33.784] [fuzzer] [warning] Get SIGWINCH signal
+[2023-11-03 13:32:33.784] [fuzzer] [error] Timeout for waiting data in instrumentation pipe. Timeout: 10000
+[2023-11-03 13:32:33.784] [fuzzer] [warning] Restarting fork server after detected timeout
+[2023-11-03 13:32:33.834] [fuzzer] [info] Spinning up the fork server...
+[2023-11-03 13:32:34.027] [fuzzer] [warning] Get SIGWINCH signal
+[2023-11-03 13:32:34.027] [fuzzer] [error] Timeout for waiting data in instrumentation pipe. Timeout: 10000
+[2023-11-03 13:32:34.027] [fuzzer] [warning] Restarting fork server after detected timeout
+[2023-11-03 13:32:34.037] [fuzzer] [info] Spinning up the fork server...
+[2023-11-03 13:32:34.191] [fuzzer] [warning] Get SIGWINCH signal
+[2023-11-03 13:32:34.191] [fuzzer] [error] Timeout for waiting data in instrumentation pipe. Timeout: 10000
+[2023-11-03 13:32:34.206] [fuzzer] [warning] Restarting fork server after detected timeout
+[2023-11-03 13:32:34.211] [fuzzer] [info] Spinning up the fork server...
+[2023-11-03 13:33:02.136] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 22, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 827.783184
+[2023-11-03 13:33:13.492] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 23, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 882.806715
+[2023-11-03 13:33:18.945] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 23, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 905.395264
+[2023-11-03 13:33:23.928] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 23, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 929.873759
+[2023-11-03 13:33:28.892] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_5:/src/src/fuzzing/out/FUZZ-SLAVE_5/queue/id_queue_000019_src_000015
+[2023-11-03 13:33:28.897] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_5:/src/src/fuzzing/out/FUZZ-SLAVE_5/queue/id_queue_000020_src_000015
+[2023-11-03 13:33:28.903] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_5:/src/src/fuzzing/out/FUZZ-SLAVE_5/queue/id_queue_000021_src_000015
+[2023-11-03 13:33:28.925] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_2:/src/src/fuzzing/out/FUZZ-SLAVE_2/queue/id_queue_000026_src_000023
+[2023-11-03 13:33:28.932] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_2:/src/src/fuzzing/out/FUZZ-SLAVE_2/queue/id_queue_000014_sync_level-1_FUZZ-SLAVE_1_src_000021
+[2023-11-03 13:33:28.940] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_2:/src/src/fuzzing/out/FUZZ-SLAVE_2/queue/id_queue_000029_sync_level-2_FUZZ-SLAVE_0_src_000024
+[2023-11-03 13:33:28.949] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_2:/src/src/fuzzing/out/FUZZ-SLAVE_2/queue/id_queue_000028_sync_level-1_FUZZ-SLAVE_1_src_000022
+[2023-11-03 13:33:28.953] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_2:/src/src/fuzzing/out/FUZZ-SLAVE_2/queue/id_queue_000030_src_000026
+[2023-11-03 13:33:28.954] [fuzzer] [info] Fuzzing test case #15 ( queued paths: 31, uniq crashes: 0, exec_us: 1176 map size: 27, exec/s 952.512648
+[2023-11-03 13:33:31.870] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 31, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 959.425322
+[2023-11-03 13:33:36.551] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 31, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 982.376410
+[2023-11-03 13:33:41.530] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 31, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1000.632805
+[2023-11-03 13:33:46.158] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 31, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1020.317017
+[2023-11-03 13:33:50.705] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_5:/src/src/fuzzing/out/FUZZ-SLAVE_5/queue/id_queue_000030_src_000029
+[2023-11-03 13:33:50.714] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_4:/src/src/fuzzing/out/FUZZ-SLAVE_4/queue/id_queue_000027_src_000026
+[2023-11-03 13:33:50.718] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 33, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1039.261133
+[2023-11-03 13:34:00.003] [fuzzer] [info] Fuzzing test case #15 ( queued paths: 34, uniq crashes: 0, exec_us: 1176 map size: 27, exec/s 1074.507457
+[2023-11-03 13:34:01.326] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 34, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1080.157032
+[2023-11-03 13:34:05.897] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 34, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 1094.969487
+[2023-11-03 13:34:10.261] [fuzzer] [info] Fuzzing test case #1 ( queued paths: 34, uniq crashes: 0, exec_us: 2830 map size: 18, exec/s 1110.084142
+[2023-11-03 13:34:14.599] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_4:/src/src/fuzzing/out/FUZZ-SLAVE_4/queue/id_queue_000030_sync_level-1_FUZZ-SLAVE_3_src_000025
+[2023-11-03 13:34:14.622] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_4:/src/src/fuzzing/out/FUZZ-SLAVE_4/queue/id_queue_000032_sync_level-1_FUZZ-SLAVE_3_src_000028
+[2023-11-03 13:34:14.636] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_4:/src/src/fuzzing/out/FUZZ-SLAVE_4/queue/id_queue_000031_sync_level-1_FUZZ-SLAVE_3_src_000027
+[2023-11-03 13:34:14.643] [fuzzer] [info] Fuzzing test case #1 ( queued paths: 37, uniq crashes: 0, exec_us: 2830 map size: 18, exec/s 1124.432017
+[2023-11-03 13:34:17.606] [fuzzer] [info] Fuzzing test case #20 ( queued paths: 37, uniq crashes: 0, exec_us: 1163 map size: 29, exec/s 1134.219940
+[2023-11-03 13:34:22.073] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 37, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1146.596003
+[2023-11-03 13:34:26.592] [fuzzer] [info] Fuzzing test case #20 ( queued paths: 37, uniq crashes: 0, exec_us: 1163 map size: 29, exec/s 1158.073627
+[2023-11-03 13:34:31.070] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 37, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1168.933714
+[2023-11-03 13:34:35.504] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 37, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 1179.779124
+[2023-11-03 13:34:39.935] [fuzzer] [info] Fuzzing test case #15 ( queued paths: 37, uniq crashes: 0, exec_us: 1176 map size: 27, exec/s 1189.820545
+[2023-11-03 13:34:41.261] [fuzzer] [info] Fuzzing test case #20 ( queued paths: 37, uniq crashes: 0, exec_us: 1163 map size: 29, exec/s 1193.321814
+[2023-11-03 13:34:45.701] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 37, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 1202.696341
+[2023-11-03 13:34:50.194] [fuzzer] [info] Fuzzing test case #26 ( queued paths: 37, uniq crashes: 0, exec_us: 1061 map size: 28, exec/s 1211.240217
+[2023-11-03 13:34:54.804] [fuzzer] [info] Fuzzing test case #20 ( queued paths: 37, uniq crashes: 0, exec_us: 1163 map size: 29, exec/s 1219.031878
+[2023-11-03 13:34:59.096] [fuzzer] [info] Fuzzing test case #20 ( queued paths: 37, uniq crashes: 0, exec_us: 1163 map size: 29, exec/s 1228.103995
+[2023-11-03 13:35:03.681] [fuzzer] [info] Fuzzing test case #15 ( queued paths: 37, uniq crashes: 0, exec_us: 1176 map size: 27, exec/s 1234.975482
+[2023-11-03 13:35:05.203] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 37, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 1236.574775
+[2023-11-03 13:35:09.668] [fuzzer] [info] Fuzzing test case #29 ( queued paths: 37, uniq crashes: 0, exec_us: 366 map size: 25, exec/s 1243.750544
+[2023-11-03 13:35:14.022] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 37, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 1251.336417
+[2023-11-03 13:35:18.448] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 37, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1258.134591
+[2023-11-03 13:35:22.968] [fuzzer] [info] Fuzzing test case #15 ( queued paths: 37, uniq crashes: 0, exec_us: 1176 map size: 27, exec/s 1264.355013
+[2023-11-03 13:35:24.222] [fuzzer] [info] Fuzzing test case #35 ( queued paths: 37, uniq crashes: 0, exec_us: 1644 map size: 36, exec/s 1267.140720
+[2023-11-03 13:35:28.800] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 37, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1272.815448
+[2023-11-03 13:35:33.318] [fuzzer] [info] Fuzzing test case #15 ( queued paths: 37, uniq crashes: 0, exec_us: 1176 map size: 27, exec/s 1278.473703
+[2023-11-03 13:35:34.824] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 37, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1279.671290
+[2023-11-03 13:35:39.218] [fuzzer] [info] Fuzzing test case #26 ( queued paths: 37, uniq crashes: 0, exec_us: 1061 map size: 28, exec/s 1285.734244
+[2023-11-03 13:35:43.687] [fuzzer] [info] Entering queue cycle 2.
+[2023-11-03 13:35:43.687] [fuzzer] [info] Fuzzing test case #29 ( queued paths: 37, uniq crashes: 0, exec_us: 366 map size: 25, exec/s 1291.128774
+[2023-11-03 13:35:48.209] [fuzzer] [info] Fuzzing test case #15 ( queued paths: 37, uniq crashes: 0, exec_us: 1176 map size: 27, exec/s 1295.869885
+[2023-11-03 13:35:49.803] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 37, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 1296.426560
+[2023-11-03 13:35:54.214] [fuzzer] [info] Fuzzing test case #1 ( queued paths: 37, uniq crashes: 0, exec_us: 2830 map size: 18, exec/s 1301.539784
+[2023-11-03 13:35:57.275] [fuzzer] [info] Fuzzing test case #1 ( queued paths: 37, uniq crashes: 0, exec_us: 2830 map size: 18, exec/s 1304.924764
+[2023-11-03 13:36:00.298] [fuzzer] [info] Fuzzing test case #20 ( queued paths: 37, uniq crashes: 0, exec_us: 1163 map size: 29, exec/s 1308.427488
+[2023-11-03 13:36:05.018] [fuzzer] [info] Fuzzing test case #26 ( queued paths: 37, uniq crashes: 0, exec_us: 1061 map size: 28, exec/s 1311.615250
+[2023-11-03 13:36:09.496] [fuzzer] [info] Fuzzing test case #26 ( queued paths: 37, uniq crashes: 0, exec_us: 1061 map size: 28, exec/s 1316.009096
+[2023-11-03 13:36:13.897] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 37, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1320.652816
+[2023-11-03 13:36:18.605] [fuzzer] [info] Fuzzing test case #35 ( queued paths: 37, uniq crashes: 0, exec_us: 1644 map size: 36, exec/s 1323.691200
+[2023-11-03 13:36:23.110] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 37, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1327.549705
+[2023-11-03 13:36:28.111] [fuzzer] [info] Fuzzing test case #29 ( queued paths: 37, uniq crashes: 0, exec_us: 366 map size: 25, exec/s 1329.013227
+[2023-11-03 13:36:32.418] [fuzzer] [info] Fuzzing test case #1 ( queued paths: 37, uniq crashes: 0, exec_us: 2830 map size: 18, exec/s 1333.420868
+[2023-11-03 13:36:35.285] [fuzzer] [info] Fuzzing test case #29 ( queued paths: 37, uniq crashes: 0, exec_us: 366 map size: 25, exec/s 1336.921266
+[2023-11-03 13:36:39.169] [fuzzer] [info] Fuzzing test case #29 ( queued paths: 37, uniq crashes: 0, exec_us: 366 map size: 25, exec/s 1343.031952
+[2023-11-03 13:36:43.268] [fuzzer] [info] Fuzzing test case #26 ( queued paths: 37, uniq crashes: 0, exec_us: 1061 map size: 28, exec/s 1348.014041
+[2023-11-03 13:36:47.463] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 37, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1352.568861
+[2023-11-03 13:36:51.765] [fuzzer] [info] Fuzzing test case #26 ( queued paths: 37, uniq crashes: 0, exec_us: 1061 map size: 28, exec/s 1356.577221
+[2023-11-03 13:36:55.882] [fuzzer] [info] Fuzzing test case #35 ( queued paths: 37, uniq crashes: 0, exec_us: 1644 map size: 36, exec/s 1361.237183
+[2023-11-03 13:37:00.163] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 37, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1365.073009
+[2023-11-03 13:37:04.620] [fuzzer] [info] Fuzzing test case #1 ( queued paths: 37, uniq crashes: 0, exec_us: 2830 map size: 18, exec/s 1368.091788
+[2023-11-03 13:37:07.955] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 37, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1368.963979
+[2023-11-03 13:37:12.942] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 37, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1369.650808
+[2023-11-03 13:37:17.633] [fuzzer] [info] Fuzzing test case #35 ( queued paths: 37, uniq crashes: 0, exec_us: 1644 map size: 36, exec/s 1371.533423
+[2023-11-03 13:37:27.052] [fuzzer] [info] Fuzzing test case #26 ( queued paths: 38, uniq crashes: 0, exec_us: 1061 map size: 28, exec/s 1376.023858
+[2023-11-03 13:37:31.855] [fuzzer] [info] Fuzzing test case #26 ( queued paths: 38, uniq crashes: 0, exec_us: 1061 map size: 28, exec/s 1377.263893
+[2023-11-03 13:37:36.628] [fuzzer] [info] Fuzzing test case #29 ( queued paths: 38, uniq crashes: 0, exec_us: 366 map size: 25, exec/s 1378.591082
+[2023-11-03 13:37:41.730] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 38, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 1378.504126
+[2023-11-03 13:37:46.690] [fuzzer] [info] Fuzzing test case #34 ( queued paths: 38, uniq crashes: 0, exec_us: 468 map size: 25, exec/s 1378.955733
+[2023-11-03 13:37:51.904] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 38, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 1378.515237
+[2023-11-03 13:37:56.704] [fuzzer] [info] Fuzzing test case #35 ( queued paths: 38, uniq crashes: 0, exec_us: 1644 map size: 36, exec/s 1379.548508
+[2023-11-03 13:38:01.502] [fuzzer] [info] Fuzzing test case #35 ( queued paths: 38, uniq crashes: 0, exec_us: 1644 map size: 36, exec/s 1380.671190
+[2023-11-03 13:38:06.102] [fuzzer] [info] Fuzzing test case #20 ( queued paths: 38, uniq crashes: 0, exec_us: 1163 map size: 29, exec/s 1382.478928
+[2023-11-03 13:38:10.927] [fuzzer] [info] Fuzzing test case #20 ( queued paths: 38, uniq crashes: 0, exec_us: 1163 map size: 29, exec/s 1383.356792
+[2023-11-03 13:38:15.752] [fuzzer] [info] Fuzzing test case #1 ( queued paths: 38, uniq crashes: 0, exec_us: 2830 map size: 18, exec/s 1384.216610
+[2023-11-03 13:38:18.785] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 38, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 1385.849571
+[2023-11-03 13:38:23.367] [fuzzer] [info] Fuzzing test case #35 ( queued paths: 38, uniq crashes: 0, exec_us: 1644 map size: 36, exec/s 1387.484170
+[2023-11-03 13:38:28.295] [fuzzer] [info] [IMPORT] FUZZ-SLAVE_6 <- FUZZ-SLAVE_2:/src/src/fuzzing/out/FUZZ-SLAVE_2/queue/id_queue_000040_sync_level-2_FUZZ-SLAVE_0_src_000038
+[2023-11-03 13:38:28.295] [fuzzer] [info] Fuzzing test case #34 ( queued paths: 39, uniq crashes: 0, exec_us: 468 map size: 25, exec/s 1388.012416
+[2023-11-03 13:38:32.881] [fuzzer] [info] Fuzzing test case #35 ( queued paths: 39, uniq crashes: 0, exec_us: 1644 map size: 36, exec/s 1389.590871
+[2023-11-03 13:38:37.575] [fuzzer] [info] Fuzzing test case #34 ( queued paths: 39, uniq crashes: 0, exec_us: 468 map size: 25, exec/s 1390.844884
+[2023-11-03 13:38:42.297] [fuzzer] [info] Fuzzing test case #35 ( queued paths: 39, uniq crashes: 0, exec_us: 1644 map size: 36, exec/s 1391.905783
+[2023-11-03 13:38:47.083] [fuzzer] [info] Entering queue cycle 3.
+[2023-11-03 13:38:47.083] [fuzzer] [info] Fuzzing test case #1 ( queued paths: 39, uniq crashes: 0, exec_us: 2830 map size: 18, exec/s 1392.807370
+[2023-11-03 13:38:50.465] [fuzzer] [info] Fuzzing test case #34 ( queued paths: 39, uniq crashes: 0, exec_us: 468 map size: 25, exec/s 1393.121163
+[2023-11-03 13:38:55.236] [fuzzer] [info] Fuzzing test case #29 ( queued paths: 39, uniq crashes: 0, exec_us: 366 map size: 25, exec/s 1393.967508
+[2023-11-03 13:38:59.945] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 39, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1394.964022
+[2023-11-03 13:39:04.775] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 39, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1395.682330
+[2023-11-03 13:39:09.427] [fuzzer] [info] Fuzzing test case #30 ( queued paths: 39, uniq crashes: 0, exec_us: 414 map size: 28, exec/s 1396.941880
+[2023-11-03 13:39:14.482] [fuzzer] [info] Fuzzing test case #22 ( queued paths: 39, uniq crashes: 0, exec_us: 541 map size: 28, exec/s 1396.927391
+[2023-11-03 13:39:19.874] [fuzzer] [info] Fuzzing test case #26 ( queued paths: 39, uniq crashes: 0, exec_us: 1061 map size: 28, exec/s 1395.927453
+[2023-11-03 13:39:25.054] [fuzzer] [info] Fuzzing test case #16 ( queued paths: 39, uniq crashes: 0, exec_us: 713 map size: 28, exec/s 1395.520773
+[2023-11-03 13:39:30.246] [fuzzer] [info] Fuzzing test case #26 ( queued paths: 39, uniq crashes: 0, exec_us: 1061 map size: 28, exec/s 1394.998684
+[2023-11-03 13:39:35.219] [fuzzer] [info] Fuzzing test case #22 ( queued paths: 39, uniq crashes: 0, exec_us: 541 map size: 28, exec/s 1395.225419
+[2023-11-03 13:39:40.053] [fuzzer] [info] Fuzzing test case #22 ( queued paths: 39, uniq crashes: 0, exec_us: 541 map size: 28, exec/s 1395.832242
+[2023-11-03 13:39:44.838] [fuzzer] [info] Fuzzing test case #29 ( queued paths: 39, uniq crashes: 0, exec_us: 366 map size: 25, exec/s 1396.568900
+[2023-11-03 13:39:49.478] [fuzzer] [info] Fuzzing test case #22 ( queued paths: 39, uniq crashes: 0, exec_us: 541 map size: 28, exec/s 1397.639721
+[2023-11-03 13:39:54.504] [fuzzer] [info] Fuzzing test case #35 ( queued paths: 39, uniq crashes: 0, exec_us: 1644 map size: 36, exec/s 1397.658974
+[2023-11-03 13:39:57.450] [fuzzer] [warning] Get Handle stop signal (Ctrl-C, etc) signal
+[2023-11-03 13:39:57.513] [fuzzer] [info] Exit Fuzz Instance Complete
