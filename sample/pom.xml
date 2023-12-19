@@ -41,6 +41,7 @@
         <dependency> 
             <groupId>org.springframework.boot</groupId> 
             <artifactId>spring-boot-starter-web</artifactId> 
+            <version>3.1.6</version>
         </dependency> 
   
         <dependency> 
@@ -48,13 +49,15 @@
             <artifactId>spring-boot-devtools</artifactId> 
             <scope>runtime</scope> 
             <optional>true</optional> 
+            <version>3.1.6</version>
         </dependency> 
   
         <dependency> 
             <groupId>org.springframework.boot</groupId> 
             <artifactId>spring-boot-starter-test</artifactId> 
             <scope>test</scope> 
-        </dependency> 
+            <version>3.1.6</version>
+        </dependency>  
     </dependencies> 
   
     <build> 
