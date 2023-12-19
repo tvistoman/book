@@ -40,27 +40,9 @@ public class BookController {
 		System.out.println(requestEntity.toString());
 	} 
 	
-	/*@PostMapping("/servlet") 
+	@PostMapping("/servlet") 
 	public void addBook(HttpServletResponse httpServletResponse, @RequestBody Book book) { 
 		System.out.println(httpServletResponse.toString());
-	}*/
-
-	@PostMapping("/servlet") 
-	public void addBook(HttpServletRequest request, @RequestBody Book book) { 
-		HttpServletRequestWrapper rw = new HttpServletRequestWrapper(request);
-		ObjectMapper obj = new ObjectMapper();
-		byte[] s = new byte[300];
-		try {
-			s = obj.writeValueAsBytes(rw);
-			// File f = new File("/home/t/request.txt");
-			// f.setWritable(true);
-			FileOutputStream os = new FileOutputStream("/home/t/request.txt");
-			os.write(s);
-			os.close();
-			// System.err.println(f.getPath());
-		} catch(Exception e) {System.err.println(e);}
-
-		System.out.println(s);
 	}
 
 	@GetMapping("/findall") 
