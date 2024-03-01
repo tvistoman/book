@@ -67,8 +67,8 @@
                 <groupId>org.springframework.boot</groupId> 
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                      <source>11</source> -- Using JDK 11 to compile
-                      <target>11</target> -- Using JDK 11 as target
+                      <source>11</source> <!-- Using JDK 11 to compile -->
+                      <target>11</target> <!-- Using JDK 11 as target  -->
                 </configuration>
             </plugin>
         </plugins>
