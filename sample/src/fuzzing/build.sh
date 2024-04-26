@@ -24,7 +24,7 @@ echo $CP_LIST
 # -------------------------------------------------------------------------------------------------------------------------------------------
 # make compilation cmd
 #
-JAVAC="javac -cp ./$CP_LIST -encoding ISO-8859-5 java/my/sample/sample/harness.java -d bin"
+JAVAC="javac -cp ./$CP_LIST -encoding ISO-8859-5 java/my/sample/sample/* -d bin"
 
 # -------------------------------------------------------------------------------------------------------------------------------------------
 # make running script
@@ -40,7 +40,7 @@ TOML="
 exit-on-time = 7200\n
 \n
 [jazzer]\n
-target_class = \"harness\"\n
+target_class = \"HarnessFuzzing\"\n
 args = \"-jobs=2 --cp=./bin/my/sample/sample$CP_LIST in\"
 "
 echo -e $TOML > sydr-fuzz.toml
@@ -51,7 +51,7 @@ echo -e $TOML > sydr-fuzz.toml
 FUZZ="jazzer \
  --agent_path=/usr/local/lib/jazzer_standalone_deploy.jar \
  --cp=./bin/my/sample/sample$CP_LIST \
- --target_class=harness \
+ --target_class=HarnessFuzzing \
  --reproducer_path=repro \
  --trace=all:gep \
  -use_value_profile=1 \
