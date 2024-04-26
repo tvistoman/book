@@ -41,7 +41,7 @@ exit-on-time = 7200\n
 \n
 [jazzer]\n
 target_class = \"harness\"\n
-args = \"-jobs=2 --cp=./bin/harness.jar$CP_LIST in\"
+args = \"-jobs=2 --cp=./bin/my/sample/sample$CP_LIST in\"
 "
 echo -e $TOML > sydr-fuzz.toml
 
