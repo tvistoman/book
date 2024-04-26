@@ -17,14 +17,14 @@ for FILE in $FILES
 do
 CP_LIST=$CP_LIST:${FILE:2}
 done
-CP_LIST=$CP_LIST:/jazzer/jazzer_standalone.jar
+CP_LIST=$CP_LIST:/usr/local/lib/jazzer/standalone_deploy.jar
 
 echo $CP_LIST
 
 # -------------------------------------------------------------------------------------------------------------------------------------------
 # make compilation cmd
 #
-JAVAC="javac -cp ./$CP_LIST -encoding ISO-8859-5 HarnessFuzzing.java -d bin"
+JAVAC="javac -cp ./$CP_LIST -encoding ISO-8859-5 java/my/sample/sample/harness.java -d bin"
 
 # -------------------------------------------------------------------------------------------------------------------------------------------
 # make running script
@@ -37,7 +37,7 @@ chmod +x run_jazz.sh
 # make fuzzing cmd
 # 
 FUZZ="/jazzer/jazzer \
- --cp=./bin/HarnessFuzzing.jar$CP_LIST \
+ --cp=./bin/harness.jar$CP_LIST \
  --target_class=HarnessFuzzing \
  --reproducer_path=repro \
  --trace=all:gep \
@@ -53,4 +53,4 @@ chmod +x fuzz_jazz.sh
 #
 $JAVAC -Xlint:deprecation
 cd bin
-jar cvf HarnessFuzzing.jar *
+jar cvf harness.jar *
