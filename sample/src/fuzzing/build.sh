@@ -40,7 +40,7 @@ TOML="
 exit-on-time = 7200\n
 \n
 [jazzer]\n
-target_class = \"HarnessFuzzing\"\n
+target_class = \"HarnessFuzzer\"\n
 args = \"-jobs=2 --cp=./bin/my/sample/sample$CP_LIST in\"
 "
 echo -e $TOML > sydr-fuzz.toml
@@ -51,7 +51,7 @@ echo -e $TOML > sydr-fuzz.toml
 FUZZ="jazzer \
  --agent_path=/usr/local/lib/jazzer_standalone_deploy.jar \
  --cp=./bin/my/sample/sample$CP_LIST \
- --target_class=HarnessFuzzing \
+ --target_class=HarnessFuzzer \
  --reproducer_path=repro \
  --trace=all:gep \
  -use_value_profile=1 \
