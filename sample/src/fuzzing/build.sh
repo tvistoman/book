@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -fr bin bin-instr
+rm -fr bin bin-instr lib
 mkdir bin
 rm *-instr*
 
@@ -29,9 +29,9 @@ JAVAC="javac -cp ./$CP_LIST -encoding ISO-8859-5 *.java -d bin"
 # -------------------------------------------------------------------------------------------------------------------------------------------
 # make running script
 #
-JAVA="java -cp ./bin$CP_LIST harness"
-echo $JAVA > run_jazz.sh
-chmod +x run_jazz.sh
+# JAVA="java -cp ./bin$CP_LIST harness"
+# echo $JAVA > run_jazz.sh
+# chmod +x run_jazz.sh
 
 # -------------------------------------------------------------------------------------------------------------------------------------------
 # make sydr-fuzz.toml
@@ -46,17 +46,17 @@ args = \"-jobs=2 --cp=`pwd`/bin$CP_LIST in\"
 echo -e $TOML > sydr-fuzz.toml
 
 # -------------------------------------------------------------------------------------------------------------------------------------------
-# make fuzzing cmd
+# make jazzer fuzzing cmd
 # 
-FUZZ="jazzer \
- --agent_path=/usr/local/lib/jazzer_standalone_deploy.jar \
- --cp=./bin$CP_LIST \
- --target_class=HarnessFuzzer \
- --reproducer_path=repro \
- --trace=all:gep \
- -use_value_profile=1 \
- -print_final_stats=1 \
- -- in"
+# FUZZ="jazzer \
+# --agent_path=/usr/local/lib/jazzer_standalone_deploy.jar \
+# --cp=`pwd`/bin$CP_LIST \
+# --target_class=HarnessFuzzer \
+# --reproducer_path=repro \
+# --trace=all:gep \
+# -use_value_profile=1 \
+# -print_final_stats=1 \
+# -- in"
 
 echo $FUZZ > fuzz_jazz.sh
 chmod +x fuzz_jazz.sh
