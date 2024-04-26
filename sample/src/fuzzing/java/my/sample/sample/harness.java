@@ -10,6 +10,9 @@ import my.sample.sample.controller.BookController;
 import my.sample.sample.dto.Book;
 import my.sample.sample.service.BookServiceImpl; 
 
+import com.code_intelligence.jazzer.api.FuzzedDataProvider;
+import com.code_intelligence.jazzer.api.FuzzerSecurityIssueHigh;
+
 public class harness {
     public static void main(String args[]) {
         ObjectMapper objectMapper = new ObjectMapper();
