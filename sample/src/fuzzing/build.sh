@@ -50,7 +50,7 @@ echo -e $TOML > sydr-fuzz.toml
 # 
 FUZZ="jazzer \
  --agent_path=/usr/local/lib/jazzer_standalone_deploy.jar \
- --cp=./bin/harness.jar$CP_LIST \
+ --cp=./bin/my/sample/sample$CP_LIST \
  --target_class=harness \
  --reproducer_path=repro \
  --trace=all:gep \
