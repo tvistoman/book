@@ -49,8 +49,9 @@ echo -e $TOML > sydr-fuzz.toml
 # make fuzzing cmd
 # 
 FUZZ="jazzer \
+ --agent_path=/usr/local/lib/jazzer_standalone_deploy.jar \
  --cp=./bin/harness.jar$CP_LIST \
- --target_class=HarnessFuzzing \
+ --target_class=harness \
  --reproducer_path=repro \
  --trace=all:gep \
  -use_value_profile=1 \
