@@ -17,7 +17,7 @@ for FILE in $FILES
 do
 CP_LIST=$CP_LIST:${FILE:2}
 done
-CP_LIST=$CP_LIST:/usr/local/lib/jazzer/standalone_deploy.jar
+CP_LIST=$CP_LIST:/usr/local/lib/jazzer_standalone_deploy.jar
 
 echo $CP_LIST
 
