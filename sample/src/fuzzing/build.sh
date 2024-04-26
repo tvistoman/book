@@ -34,16 +34,27 @@ echo $JAVA > run_jazz.sh
 chmod +x run_jazz.sh
 
 # -------------------------------------------------------------------------------------------------------------------------------------------
+# make sydr-fuzz.toml
+# 
+TOML="\
+exit-on-time = 7200 \
+ \
+[jazzer] \
+target_class = \"harness\" \
+args = \"-jobs=2 --cp=./bin/harness.jar$CP_LIST \" in \
+echo $TOML > sydr-fuzz.toml"
+
+# -------------------------------------------------------------------------------------------------------------------------------------------
 # make fuzzing cmd
 # 
-FUZZ="/jazzer/jazzer \
+FUZZ="jazzer \
  --cp=./bin/harness.jar$CP_LIST \
  --target_class=HarnessFuzzing \
  --reproducer_path=repro \
  --trace=all:gep \
  -use_value_profile=1 \
  -print_final_stats=1 \
- -- in_out"
+ -- in"
 
 echo $FUZZ > fuzz_jazz.sh
 chmod +x fuzz_jazz.sh
