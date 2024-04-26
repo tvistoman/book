@@ -5,7 +5,7 @@ mkdir bin
 rm *-instr*
 
 cp ../../target/ex-0.0.1.jar.original bin/
-unzip -j ../../target/ex-0.0.1.jar -i jar -d lib
+unzip -j ../../target/ex-0.0.1.jar -i *.jar -d lib
 
 # -------------------------------------------------------------------------------------------------------------------------------------------
 # list dependencies
