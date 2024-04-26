@@ -15,7 +15,7 @@ FILES=`find . -iname "*.jar*"`
 CP_LIST=""
 for FILE in $FILES
 do
-CP_LIST=$CP_LIST:${FILE:2}
+CP_LIST=$CP_LIST:`pwd`/${FILE:2}
 done
 CP_LIST=$CP_LIST:/usr/local/lib/jazzer_standalone_deploy.jar
 
@@ -24,7 +24,7 @@ echo $CP_LIST
 # -------------------------------------------------------------------------------------------------------------------------------------------
 # make compilation cmd
 #
-JAVAC="javac -cp ./$CP_LIST -encoding ISO-8859-5 java/my/sample/sample/* -d bin"
+JAVAC="javac -cp ./$CP_LIST -encoding ISO-8859-5 *.java -d bin"
 
 # -------------------------------------------------------------------------------------------------------------------------------------------
 # make running script
@@ -41,7 +41,7 @@ exit-on-time = 7200\n
 \n
 [jazzer]\n
 target_class = \"HarnessFuzzer\"\n
-args = \"-jobs=2 --cp=./bin/my/sample/sample$CP_LIST in\"
+args = \"-jobs=2 --cp=`pwd`/bin$CP_LIST in\"
 "
 echo -e $TOML > sydr-fuzz.toml
 
@@ -50,7 +50,7 @@ echo -e $TOML > sydr-fuzz.toml
 # 
 FUZZ="jazzer \
  --agent_path=/usr/local/lib/jazzer_standalone_deploy.jar \
- --cp=./bin/my/sample/sample$CP_LIST \
+ --cp=./bin$CP_LIST \
  --target_class=HarnessFuzzer \
  --reproducer_path=repro \
  --trace=all:gep \
