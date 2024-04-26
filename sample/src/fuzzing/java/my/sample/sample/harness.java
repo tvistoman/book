@@ -41,4 +41,19 @@ public class harness {
                 System.out.println("wrong test number, possible values are `1` and `2` in the second parameter");
         }
     } 
+
+    
+    public static void fuzzerTestOneInput(FuzzedDataProvider fuzzedDataProvider) {
+        ObjectMapper objectMapper = new ObjectMapper();
+        BookController obj = new BookController();
+        Book book;
+        String content = fuzzedDataProvider.consumeRemainingAsAsciiString();
+        try {
+            book = objectMapper.readValue(content, Book.class); 
+        } catch (IOException ioe) {
+            System.out.println(ioe);
+            return;
+        }
+        obj.addBook(book);
+    }
 }
