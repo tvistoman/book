@@ -36,11 +36,11 @@ chmod +x run_jazz.sh
 # -------------------------------------------------------------------------------------------------------------------------------------------
 # make sydr-fuzz.toml
 # 
-TOML="exit-on-time = 7200 \n
- \n
-[jazzer] \n
-target_class = \"harness\" \n
-args = \"-jobs=2 --cp=./bin/harness.jar$CP_LIST \" in"
+TOML="exit-on-time = 7200\n
+\n
+[jazzer]\n
+target_class = \"harness\"\n
+args = \"-jobs=2 --cp=./bin/harness.jar$CP_LIST in\n"
 echo -e $TOML > sydr-fuzz.toml
 
 # -------------------------------------------------------------------------------------------------------------------------------------------
