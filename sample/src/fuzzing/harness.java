@@ -1,5 +1,3 @@
-package my.sample.sample;
-
 // import com.fasterxml.jackson.core.json.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
