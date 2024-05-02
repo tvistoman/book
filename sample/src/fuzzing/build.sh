@@ -37,7 +37,7 @@ JAVAC="javac -cp ./$CP_LIST -encoding ISO-8859-5 *.java -d bin"
 # make sydr-fuzz.toml
 # 
 TOML="
-exit-on-time = 7200\n
+exit-on-time = 300\n
 \n
 [jazzer]\n
 target_class = \"HarnessFuzzer\"\n
